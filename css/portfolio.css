@@ -1,0 +1,210 @@
+:root {
+  --blue-color: #2196f3;
+  --logo-black: #000000;
+  --white-color: #ffffff;
+  --black-color: #212121;
+  --grey-color: #757575;
+  --footer-grey: #ffffff99;
+  --blue-button: #188ce8;
+  --hero_footer-background: #2f303a;
+  --our-team: #f5f4fa;
+  --item-border: rgb(238, 238, 238);
+  --header-border: rgb(236, 236, 236);
+}
+
+body {
+  font-family: "Roboto";
+}
+.container {
+  width: 1200px;
+  outline: solid red;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header-logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: calc(31 / 26);
+  color: var(--logo-black);
+}
+.accent-blue {
+  color: var(--blue-color);
+}
+.header-nav,
+.header-nav-list,
+.header-contact-list {
+  display: flex;
+  align-items: center;
+}
+.header {
+  width: 1600px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 94px;
+  border: 1px solid var(--header-border);
+}
+
+.header-nav-link {
+  color: var(--black-color);
+  line-height: calc(16 / 14);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-link {
+  color: var(--grey-color);
+  line-height: calc(16 / 14);
+  font-size: 14px;
+  font-weight: 500;
+}
+header li a:hover {
+  color: var(--blue-color);
+}
+.header-flex {
+  display: flex;
+  margin: auto;
+}
+.header-nav {
+  margin-left: 93px;
+}
+.header-contact-list {
+  margin-left: 344px;
+}
+.header-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.header-contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+/* MAIN */
+.main {
+  margin: 0 auto;
+  margin-bottom: 94px;
+}
+.filter-btn {
+  background-color: var(--our-team);
+  color: var(--black-color);
+  background-color: var(--our-team);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: calc(26 / 16);
+  padding: 6px 22px;
+  border-radius: 4px;
+}
+.active-btn {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+  padding-left: 25px;
+  padding-right: 25px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.filter-btn:hover {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-list-item:not(:last-child) {
+  margin-right: 8px;
+}
+/* portfolio  */
+.portfolio-item {
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  height: 404px;
+  border: 1px solid var(--item-border);
+  box-sizing: border-box;
+}
+.portfolio-item:hover {
+  border-bottom: 1px solid var(--item-border);
+  border-left: 1px solid var(--item-border);
+  border-right: 1px solid var(--item-border);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+}
+.portfolio-title {
+  color: var(--black-color);
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: calc(36 / 18);
+  margin-top: 20px;
+  margin-left: 24px;
+}
+.portfolio-note {
+  color: var(--grey-color);
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: calc(30 / 16);
+  margin-top: 4px;
+  margin-left: 24px;
+}
+.portfolio {
+  width: 1600px;
+  margin: 0 auto;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* FOOTER */
+
+.footer {
+  margin: 0 auto;
+  background-color: var(--hero_footer-background);
+  width: 1600px;
+  height: 252px;
+  display: flex;
+}
+.accent-blue {
+  color: var(--blue-color);
+}
+.footer-logo {
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: calc(31 / 26);
+  color: var(--white-color);
+}
+.footer-location {
+  color: var(--white-color);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: calc(24 / 14);
+}
+.footer-contact-link {
+  color: var(--footer-grey);
+
+  font-size: 14px;
+  font-weight: 400;
+  line-height: calc(24 / 14);
+}
+.footer-flex {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-address {
+  margin-top: 20px;
+  font-style: normal;
+}
+.footer-location {
+  margin-top: 9px;
+}
